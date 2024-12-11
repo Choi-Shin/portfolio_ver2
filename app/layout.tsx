@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import bgStyles from "./styles/background.module.css";
+// import bgStyles from "./styles/background.module.css";
 import { BackgroundProvider } from "./provider/background";
 const orbit = localFont({
   src: "./fonts/Orbit-Regular.ttf",

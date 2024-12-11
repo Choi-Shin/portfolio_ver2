@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dragIcon from "../../imgs/dragIcon.png";
 import useIntervals from "@/app/hooks/interval";
-import useTimeouts from "@/app/hooks/timeout";
+import { TSlider } from "@/app/types/slider";
 
 export default function Contact() {
   const [message, setMessage] = useState("");
@@ -110,6 +110,9 @@ export default function Contact() {
         alt="드래그 아이콘"
         className="mb-5"
       ></Image>
+      {slider.data.map((value, index) => (
+        <div key={index}>{value.header}</div>
+      ))}
     </div>
   );
 }

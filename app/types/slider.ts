@@ -2,6 +2,6 @@ type TCard = {
   header: string;
   content: JSX.Element;
 };
-type TSlider = {
+export type TSlider = {
   data: TCard[];
 };

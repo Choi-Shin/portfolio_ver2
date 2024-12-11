@@ -5,12 +5,12 @@ import { TSkill } from "../data/skills";
 import { HoverSkill } from "./hoverSkill";
 
 export function SkillItem({
-  image,
-  improvements,
+  // image,
+  // improvements,
   skill,
   detail,
-  progress,
-}: TSkill) {
+}: // progress,
+TSkill) {
   const [show, setShow] = useState(false);
   return (
     <div

@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
-
 export type OpacityInfo = {
   opacity: number;
   timerId: NodeJS.Timeout | undefined;
