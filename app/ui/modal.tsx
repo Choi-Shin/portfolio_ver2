@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
-
 type TModal = {
   title: string;
   content: JSX.Element;
