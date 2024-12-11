@@ -1,0 +1,12 @@
+.textarea {
+  outline: none;
+  border: 1px solid #24f29c;
+  /* border-radius: 1rem; */
+  background-color: transparent;
+  padding: 0.4rem;
+  height: 90%;
+  max-height: 272px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}

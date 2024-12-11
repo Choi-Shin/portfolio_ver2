@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main-color: #24f29c;
+  --hover-color: ##d600ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +16,18 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body {
+  color: var(--main-color);
+  cursor: url(imgs/cursor/resized_cursor.png), default;
+}
+
+a,
+button {
+  cursor: url(imgs/cursor/resized_pointer.png), pointer !important;
 }

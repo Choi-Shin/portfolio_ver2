@@ -12,6 +12,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        orbit: ["var(--font-orbit)"],
+      },
+      screens: {
+        mobile: "320px",
+      },
     },
   },
   plugins: [],
