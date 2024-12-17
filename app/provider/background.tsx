@@ -61,12 +61,21 @@ export function BackgroundProvider({
           y: event.clientY,
         }));
       }}
+      onClick={(e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        setAlertShow(false);
+      }}
     >
       {alertShow ? (
         <Modal
           title="더 좋은 사용자 경험을 위해 추천합니다."
           content={
-            <div className="">
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+            >
               <div className="p-24">
                 <a
                   target="blank"
