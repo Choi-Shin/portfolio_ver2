@@ -1,6 +1,6 @@
 import Image from "next/image";
-import blank from "../imgs/blank.svg";
-import dot from "../imgs/dot.svg";
+import blank from "../assets/imgs/blank.svg";
+import dot from "../assets/imgs/dot.svg";
 import { useEffect, useState } from "react";
 import { LogoOpacity } from "../types/ui";
 import useTimeouts from "../hooks/timeout";

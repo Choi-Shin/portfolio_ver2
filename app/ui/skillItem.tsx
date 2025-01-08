@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { TSkill } from "../data/skills";
-import { HoverSkill } from "./hoverSkill";
 import { Modal } from "./modal";
+import Image from "next/image";
 
 export function SkillItem({
-  // image,
+  image,
   // improvements,
   skill,
   detail,
@@ -21,6 +21,7 @@ TSkill) {
       // onMouseOver={() => setShow(true)}
       // onMouseLeave={() => setShow(false)}
       onClick={(e) => {
+        console.log(e.currentTarget.textContent);
         e.stopPropagation();
         if (show) {
           setShow(false);
@@ -30,22 +31,32 @@ TSkill) {
       }}
     >
       {skill}
-      <div
-        onClick={() => {
-          setShow(false);
-        }}
-        className="absolute z-50 top-0 left-0 w-full h-full"
-      >
-        {show ? (
+      {show ? (
+        <div
+          onClick={() => {
+            setShow(false);
+          }}
+          className="absolute z-50 top-0 left-0 w-full h-full"
+        >
           <Modal
             title={skill}
-            content={<div>{detail}</div>}
+            content={
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                }}
+              >
+                <div className="p-24">
+                  <Image src={image} width={30} height={30}></Image>
+                </div>
+              </div>
+            }
             func={() => setShow(false)}
           ></Modal>
-        ) : (
-          <></>
-        )}
-      </div>
+        </div>
+      ) : (
+        <></>
+      )}
       {/* <HoverSkill item={{ detail, show, setShow }}></HoverSkill> */}
     </div>
   );

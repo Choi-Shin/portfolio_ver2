@@ -111,7 +111,7 @@ export default function Contact() {
         className="mb-5"
       ></Image>
       {slider.data.map((value, index) => (
-        <div key={index}>{value.header}</div>
+        <div key={index}>{value.content}</div>
       ))}
     </div>
   );

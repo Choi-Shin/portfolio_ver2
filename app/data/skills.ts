@@ -11,7 +11,7 @@ export const SKILL = {
   backend: [
     {
       skill: "Spring",
-      image: "./assets/img/skills/Spring.svg",
+      image: "/assets/img/skills/Spring.svg",
       progress: "70",
       detail:
         "- MVC 패턴을 사용하여 프로젝트의 기능적 분리를 수행할 수 있으며, AOP를 사용하여 횡단 관심으로 분류된 메소드가 수행할 공통 부가기능에 대한 작업수행을 할 수 있습니다. \n- Mybatis나 JPA와 연동하여 데이터를 다룰 수 있습니다. \n- Spring mail을 사용하여 회원가입 인증 메일을 서버에서 전송할 수 있습니다.",
@@ -20,7 +20,7 @@ export const SKILL = {
     },
     {
       skill: "Express",
-      image: "./assets/img/skills/Expressjs.png",
+      image: "/assets/img/skills/Expressjs.png",
       progress: "20",
       detail:
         "- Router 레벨 미들웨어를 사용하여 RESTful API를 구현할 수 있습니다. \n- mongoose와의 연동으로 데이터를 주고 받을 수 있습니다. \n- React와 연동하여 html을 응답해줄 수 있습니다. \n- socket.io를 사용하여 영상통화와 채팅기능을 구현할 수 있습니다. \n- .env 파일을 사용하여 보안을 강화할 수 있습니다.",
@@ -31,7 +31,7 @@ export const SKILL = {
   frontend: [
     {
       skill: "React",
-      image: "./assets/img/skills/React.png",
+      image: "/assets/img/skills/React.png",
       progress: "70",
       detail:
         "- Hooks를 사용하여 상태관리와 상태변화에 따른 함수 실행을 할 수 있습니다. \n- redux를 사용하여 앱 전반의 상태를 관리할 수 있습니다. \n- fetch api를 이용하여 데이터 요청을 할 수 있습니다.",
@@ -40,7 +40,7 @@ export const SKILL = {
     },
     {
       skill: "Next.js",
-      image: "./assets/img/skills/Next-js.png",
+      image: "/assets/img/skills/Next-js.png",
       progress: "80",
       detail:
         "- getServerSideProps를 사용하여 지속적으로 바뀌는 페이지에 대한 서버 사이드 렌더링을 수행합니다. \n- NextApiRequest와 NextApiResponse를 사용하여 데이터 CRUD를 구현합니다. \n- RESTful API로 구조화합니다. \n- mongoose와 연동하여 응답을 합니다. \n- React가 가진 단점인 SEO를 처리합니다.",
@@ -49,7 +49,7 @@ export const SKILL = {
     },
     {
       skill: "React-Native",
-      image: "./assets/img/skills/React.png",
+      image: "/assets/img/skills/React.png",
       progress: "30",
       detail:
         "- 모바일 애플리케이션을 제작할 수 있습니다. \n- 스프링과 연동하여 mySQL db에 접근하고 CRUD를 구현합니다.",
@@ -60,7 +60,7 @@ export const SKILL = {
   db: [
     {
       skill: "MySQL",
-      image: "./assets/img/skills/mysql.png",
+      image: "/assets/img/skills/mysql.png",
       progress: "70",
       detail:
         "- database를 만들고 스키마에 따른 테이블 구조를 정의할 수 있습니다. \n- ddl, dml, dcl을 사용하여 데이터베이스를 다루고 정의할 수 있습니다. \n- 독립된 환경에서 사용하기 위해 docker를 이용할 수 있습니다. \n- myBatis나 JPA를 연동하여 mysql jdbc를 이용할 수 있습니다.",
@@ -69,7 +69,7 @@ export const SKILL = {
     },
     {
       skill: "Oracle",
-      image: "./assets/img/skills/Oracle.svg",
+      image: "/assets/img/skills/Oracle.svg",
       progress: "20",
       detail:
         "- database를 만들고 스키마에 따른 테이블 구조를 정의할 수 있습니다. \n- ddl, dml, dcl을 사용하여 데이터베이스를 다루고 정의할 수 있습니다.",
@@ -78,7 +78,7 @@ export const SKILL = {
     },
     {
       skill: "MongoDB",
-      image: "./assets/img/skills/mongoDB.png",
+      image: "/assets/img/skills/mongoDB.png",
       progress: "60",
       detail:
         "- 자바스크립트 기반의 프레임워크에서 typescript로 스키마 타입을 선언하고 그에 맞는 데이터에 대한 CRUD를 수행할 수 있습니다. \n- bcrypt 모듈을 사용하여 암호화된 데이터를 보관할 수 있습니다. \n- 데이터 조회 결과마다 서로 다른 응답을 처리할 수 있습니다.",
@@ -89,7 +89,7 @@ export const SKILL = {
   language: [
     {
       skill: "Java",
-      image: "./assets/img/skills/java.png",
+      image: "/assets/img/skills/java.png",
       progress: "70",
       detail:
         "- 접근 제한자를 사용하여 데이터를 보호하거나 캡슐화를 보장합니다. \n- 기능이 유사하여 메소드명이 같지만 매개변수의 타입이나 갯수가 서로 다른 함수를 오버로딩할 수 있습니다. \n- 상속받은 메소드를 오버라이딩할 수 있습니다. \n- 인터페이스를 사용하여 구현된 클래스가 제공할 기능을 보장할 수 있습니다. \n- Collection 자료구조를 사용하여 다양한 형태의 데이터를 정의하고 다룰 수 있습니다. \n- 제네릭을 사용하여 타입 체크를 하고 데이터 사용시의 타입 변환 과정을 제거할 수 있습니다. \n- 메이븐 빌드를 위해 pom.xml 파일을 작성할 수 있습니다.",
@@ -108,7 +108,7 @@ export const SKILL = {
 
     {
       skill: "Typescript",
-      image: "./assets/img/skills/typescript.png",
+      image: "/assets/img/skills/typescript.png",
       progress: "70",
       detail:
         "- 인터페이스와 타입을 선언할 수 있습니다. \n- 교차타입과 타입 가드를 사용하여 자료형의 결합을 수행하고 안정성을 높일 수 있습니다. \n- tsx파일을 작성하여 타입 룰을 지킨 컴포넌트를 react 프레임워크에 import할 수 있습니다.",
@@ -117,7 +117,7 @@ export const SKILL = {
     },
     {
       skill: "Javascript",
-      image: "./assets/img/skills/javascript.png",
+      image: "/assets/img/skills/javascript.png",
       progress: "70",
       detail:
         "- canvas를 사용하여 간단한 게임을 제작할 수 있습니다. \n- vanilla.js로 fullpage.js와 같은 기능을 하는 페이지를 구현할 수 있습니다. \n- json데이터를 다루고 수정하며 fetch할 수 있습니다. \n- addEventListener와 dispatchEvent를 사용하여 이벤트 핸들링을 할 수 있습니다. \n- jQuery의 on과 trigger를 사용하여 같은 기능을 수행할 수 있습니다. \n- document 객체와 window 객체를 사용하여 원하는 기능을 수행하고 정보를 얻을 수 있습니다. \n- 쿠키와 세션에 데이터를 저장하고 조회할 수 있습니다.",
@@ -126,7 +126,7 @@ export const SKILL = {
     },
     {
       skill: "Python",
-      image: "./assets/img/skills/python.png",
+      image: "/assets/img/skills/python.png",
       progress: "70",
       detail:
         "- AWS lambda를 파이썬 코드로 작성하여 다양한 API에 요청을 보내고 요청을 받아 응답할 수 있습니다. \n- selenium 패키지를 사용하여 웹스크래핑 코드를 작성할 수 있습니다. \n- openpyxl을 사용하여 엑셀을 불러오고 notion api를 사용하여 노션에 다량의 데이터를 입력할 수 있습니다.",
@@ -135,7 +135,7 @@ export const SKILL = {
     },
     {
       skill: "Go",
-      image: "./assets/img/skills/Go.png",
+      image: "/assets/img/skills/Go.png",
       progress: "50",
       detail:
         "- 모듈을 제작하고 main함수에서 그것을 실행할 수 있습니다. \n- 다량의 작업을 동시에 수행하기 위해 go routine과 chan을 사용하여 쓰레드화 할 수 있습니다. \n- 웹스크래핑을 수행할 수 있습니다. \n- defer를 사용하여 함수 실행을 지연시킬 수 있습니다. \n- 데이터를 가공하여 csv파일을 생성할 수 있습니다.",
@@ -146,7 +146,7 @@ export const SKILL = {
   deployment: [
     {
       skill: "AWS",
-      image: "./assets/img/skills/aws.png",
+      image: "/assets/img/skills/aws.png",
       progress: "30",
       detail:
         "- AWS의 EC2를 사용하여 백엔드 서버를 구축할 수 있습니다. \n- AWS의 Lambda를 사용하여 애플리케이션을 제작할 수 있습니다.",
@@ -155,7 +155,7 @@ export const SKILL = {
     },
     {
       skill: "Vercel",
-      image: "./assets/img/skills/vercel.png",
+      image: "/assets/img/skills/vercel.png",
       progress: "20",
       detail: "- github 레파지토리와 연동하여 웹사이트를 배포할 수 있습니다.",
       improvements:
@@ -165,7 +165,7 @@ export const SKILL = {
   devops: [
     {
       skill: "AWS Lambda",
-      image: "./assets/img/skills/aws-lambda.png",
+      image: "/assets/img/skills/aws-lambda.png",
       progress: "60",
       detail:
         "- 파이썬 코드를 작성하여 공공API에 요청을 보내고 응답 받을 수 있습니다. \n- 데이터를 가공하여 카카오 챗봇 API에 응답을 보낼 수 있습니다.",
@@ -174,7 +174,7 @@ export const SKILL = {
     },
     {
       skill: "AWS EC2",
-      image: "./assets/img/skills/aws-ec2.png",
+      image: "/assets/img/skills/aws-ec2.png",
       progress: "70",
       detail:
         "- EC2에 서버를 구축할 수 있습니다. \n- CLI 환경에서 build할 수 있습니다. \n- 사용할 EC2 인스턴스에 대한 설정을 할 수 있습니다. \n- ftp를 사용하여 파일을 주고 받을 수 있습니다.",
@@ -183,7 +183,7 @@ export const SKILL = {
     },
     {
       skill: "Git",
-      image: "./assets/img/skills/git.png",
+      image: "/assets/img/skills/git.png",
       progress: "60",
       detail:
         "- init, remote add, add, commit, push, pull, clone, branch 등의 명령어를 사용하여 깃 저장소를 관리 할 수 있습니다. \n- merge를 사용하여 브랜치를 병합할 수 있습니다.",
@@ -192,7 +192,7 @@ export const SKILL = {
     },
     {
       skill: "docker",
-      image: "./assets/img/skills/docker.png",
+      image: "/assets/img/skills/docker.png",
       progress: "10",
       detail:
         "- 이미지 라이브러리에서 image를 pull하고 컨테이너를 실행시킬 수 있습니다.",
@@ -203,7 +203,7 @@ export const SKILL = {
   os: [
     {
       skill: "ubuntu Linux",
-      image: "./assets/img/skills/Linux.png",
+      image: "/assets/img/skills/Linux.png",
       progress: "50",
       detail:
         "- CLI 환경에서 명령어를 사용할 수 있습니다. \n- apt-get을 사용하여 패키지를 관리할 수 있습니다. \n- shell script를 작성하여 원하는 동작을 수행할 수 있습니다. \n- 디렉토리와 파일에 대한 권한을 변경할 수 있습니다.",
@@ -212,7 +212,7 @@ export const SKILL = {
     },
     {
       skill: "Unix",
-      image: "./assets/img/skills/unix.png",
+      image: "/assets/img/skills/unix.png",
       progress: "40",
       detail:
         "- CLI 환경에서 명령어를 사용할 수 있습니다. \n- macos 환경에서 brew 사용하여 패키지를 관리할 수 있습니다. \n- shell script를 작성하여 원하는 동작을 수행할 수 있습니다. \n- 디렉토리와 파일에 대한 권한을 변경할 수 있습니다.",
@@ -222,7 +222,7 @@ export const SKILL = {
   server: [
     {
       skill: "Nginx",
-      image: "./assets/img/skills/nginx.png",
+      image: "i/assets/img/skills/nginx.png",
       progress: "40",
       detail:
         "- linux 환경에서 nginx를 설치하고 pm2로 올려놓은 애플리케이션에 reverse proxy 해주는 설정을 할 수 있습니다. \n- ssl 인증서를 사용하여 https 프로토콜로 접속할 수 있습니다.",

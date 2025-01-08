@@ -1,3 +1,5 @@
+"use client";
+
 import { TSkill } from "../data/skills";
 import { SkillItem } from "./skillItem";
 

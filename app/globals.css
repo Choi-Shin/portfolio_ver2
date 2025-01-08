@@ -24,10 +24,10 @@
 
 body {
   color: var(--main-color);
-  cursor: url(imgs/cursor/resized_cursor.png), default;
+  cursor: url(assets/imgs/cursor/resized_cursor.png), default;
 }
 
 a,
 button {
-  cursor: url(imgs/cursor/resized_pointer.png), pointer !important;
+  cursor: url(assets/imgs/cursor/resized_pointer.png), pointer !important;
 }
