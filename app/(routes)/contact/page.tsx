@@ -1,10 +1,10 @@
 "use client";
 import { ChangeEvent, useEffect, useState } from "react";
 import design from "../../styles/design.module.css";
-import githubImg from "../../imgs/github.png";
+import githubImg from "../../assets/imgs/github.png";
 import Image from "next/image";
 import Link from "next/link";
-import dragIcon from "../../imgs/dragIcon.png";
+import dragIcon from "../../assets/imgs/dragIcon.png";
 import useIntervals from "@/app/hooks/interval";
 import { TSlider } from "@/app/types/slider";
 
@@ -110,9 +110,15 @@ export default function Contact() {
         alt="드래그 아이콘"
         className="mb-5"
       ></Image>
-      {slider.data.map((value, index) => (
-        <div key={index}>{value.content}</div>
-      ))}
+      <div className="w-96 border-solid border-green-500 border-2">
+        <div className="flex w-fit">
+          {slider.data.map((value, index) => (
+            <div className="w-96" key={index}>
+              {value.content}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
