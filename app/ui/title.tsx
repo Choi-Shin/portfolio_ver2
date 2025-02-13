@@ -7,23 +7,24 @@ export function Title() {
   const [id, setId] = useState<NodeJS.Timeout>();
   const timer = useTimeouts();
   const interval = useIntervals();
-  function grow() {
-    const id = interval.setIntervalTimer(() => {
-      setOpacity((prev) => prev + 0.1);
-    }, 100);
-    setId(id);
-  }
+
   useEffect(() => {
     if (opacity > 1) {
       setOpacity(1);
       interval.clearIntervalTimer(id!);
     }
-  }, [opacity]);
+  }, [id, interval, opacity]);
   useEffect(() => {
+    function grow() {
+      const id = interval.setIntervalTimer(() => {
+        setOpacity((prev) => prev + 0.1);
+      }, 100);
+      setId(id);
+    }
     const id = timer.setTimer(() => {
       grow();
       timer.clearTimer(id);
     }, 1000);
-  }, []);
+  }, [timer, id, interval]);
   return <h1 style={{ opacity: opacity }}>신초이의 포트폴리오</h1>;
 }

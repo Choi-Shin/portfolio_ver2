@@ -9,8 +9,8 @@ export function SkillItem({
   image,
   // improvements,
   skill,
-  detail,
-}: // progress,
+}: //detail,
+// progress,
 TSkill) {
   const [show, setShow] = useState(false);
   useEffect(() => {
