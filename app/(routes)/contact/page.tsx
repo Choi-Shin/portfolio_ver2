@@ -51,7 +51,7 @@ export default function Contact() {
       });
     }, 40);
     return () => interval.clearIntervalTimer(id);
-  }, []);
+  }, [interval]);
   const slider: TSlider = {
     data: [
       {

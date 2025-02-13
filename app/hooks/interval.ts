@@ -14,20 +14,19 @@ export default function useIntervals() {
       intervalIDs.current.delete(id);
     }
   };
-  const clearAllIntervalTimers = () => {
-    intervalIDs.current.forEach(clearIntervalTimer);
-    intervalIDs.current.clear();
-  };
   const printAllIntervalTimers = () => {
     intervalIDs.current.forEach((id) => console.log(id));
   };
   useEffect(() => {
+    const clearAllIntervalTimers = () => {
+      intervalIDs.current.forEach(clearIntervalTimer);
+      intervalIDs.current.clear();
+    };
     return () => clearAllIntervalTimers();
   }, []);
   return {
     setIntervalTimer,
     clearIntervalTimer,
-    clearAllIntervalTimers,
     printAllIntervalTimers,
   };
 }

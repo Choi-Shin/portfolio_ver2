@@ -66,7 +66,7 @@ export function Background({ x, y, gyroX, gyroZ }: TPos) {
       speaker();
     }, 1500);
     setOpacityInfo((prev) => ({ ...prev, timerId: id }));
-  }, []);
+  }, [setTimer, speaker]);
   useEffect(() => {
     if (opacityInfo.opacity > 1) {
       setOpacityInfo((prev) => ({ ...prev, opacity: 1 }));
@@ -74,10 +74,10 @@ export function Background({ x, y, gyroX, gyroZ }: TPos) {
       clearTimer(opacityInfo.timerId!);
       return;
     }
-  }, [opacityInfo]);
+  }, [clearIntervalTimer, clearTimer, opacityInfo]);
   useEffect(() => {
     angleCalculator();
-  }, [x, y, gyroX, gyroZ]);
+  }, [angleCalculator]);
   useEffect(() => {
     if (window !== undefined) {
       const X = window.innerWidth;
@@ -86,7 +86,7 @@ export function Background({ x, y, gyroX, gyroZ }: TPos) {
     }
     if (gyroX != undefined && gyroZ != undefined) {
     }
-  }, []);
+  }, [gyroX, gyroZ]);
   return (
     <>
       <div
