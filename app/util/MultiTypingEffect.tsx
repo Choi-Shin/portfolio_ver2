@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import styles from "@/app/styles/MultiTypingEffect.module.css";
+import styles from "../styles/multiTypingEffect.module.css";
 type MultiTypingEffectProps = {
   texts: string[];
 };
