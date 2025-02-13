@@ -9,8 +9,8 @@ export function SkillItem({
   image,
   // improvements,
   skill,
-}: //detail,
-// progress,
+  detail,
+}: // progress,
 TSkill) {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -47,7 +47,12 @@ TSkill) {
                 }}
               >
                 <div className="p-24">
-                  <Image src={image} width={30} height={30}></Image>
+                  <Image
+                    alt={detail}
+                    src={image}
+                    width={30}
+                    height={30}
+                  ></Image>
                 </div>
               </div>
             }
